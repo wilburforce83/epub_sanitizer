@@ -1,0 +1,27 @@
+{
+  "name": "epub_sanitizer",
+  "version": "1.0.0",
+  "description": "Simple epub sanitizer to organise, rename and move epub books that are dropped into a folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilburforce83/epub_sanitizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilburforce83/epub_sanitizer/issues"
+  },
+  "homepage": "https://github.com/wilburforce83/epub_sanitizer#readme",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "dotenv": "^16.4.7",
+    "epub": "^1.3.0",
+    "epub-metadata": "^0.2.0",
+    "sanitize-filename": "^1.6.3"
+  }
+}
