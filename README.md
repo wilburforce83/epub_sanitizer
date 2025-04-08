@@ -30,10 +30,6 @@ It is designed to be super light-weight for people who want to manage their libr
 
 1. **Clone the Repository:**
     
-    bash
-    
-    CopyEdit
-    
     ```
     git clone https://github.com/wilburforce83/epub_sanitizer.git 
     cd epub_sanitizer
@@ -42,20 +38,12 @@ It is designed to be super light-weight for people who want to manage their libr
 
 2. **Install Dependencies:**
     
-    bash
-    
-    CopyEdit
-    
     `npm install`
     
 
 3. **Configure Environment Variables:**
     
     Create a `.env` file in the root of your project with the following content:
-    
-    ini
-    
-    CopyEdit
     
     `ROOT_DIR=/path/to/your/epub/folder`
     
@@ -68,10 +56,6 @@ Replace `/path/to/your/epub/folder` with the full path to your EPUB files direct
 
 For testing purposes, run the script directly with Node.js:​
 
-bash
-
-CopyEdit
-
 `node organizeBooks.js`
 
 This command processes all EPUB files in `ROOT_DIR` and then watches the folder for new files.​
@@ -82,19 +66,11 @@ To run **epub_sanitizer** as a persistent process using PM2:​
 
 1. **Install PM2 Globally (if not already installed):**
     
-    bash
-    
-    CopyEdit
-    
     `npm install -g pm2`
     
 
 2. **Start the Application with PM2:**
-    
-    bash
-    
-    CopyEdit
-    
+
     `pm2 start organizeBooks.js --name epub_sanitizer`
     
 
@@ -102,49 +78,27 @@ To run **epub_sanitizer** as a persistent process using PM2:​
     
     - **View PM2 Status:**
         
-        bash
-        
-        CopyEdit
-        
         `pm2 status`
         
     - **View Logs:**
         
-        bash
-        
-        CopyEdit
-        
         `pm2 logs epub_sanitizer`
         
     - **Stop the Process:**
-        
-        bash
-        
-        CopyEdit
+
         
         `pm2 stop epub_sanitizer`
         
     - **Restart the Process (for updates):**
         
-        bash
-        
-        CopyEdit
         
         `pm2 restart epub_sanitizer`
         
     - **Save the PM2 Process List (to start on reboot):**
         
-        bash
-        
-        CopyEdit
-        
         `pm2 save`
         
     - **Configure PM2 to Start on System Boot:**
-        
-        bash
-        
-        CopyEdit
         
         `pm2 startup`
         
